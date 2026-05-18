@@ -93,8 +93,11 @@ background-color: rgba(255, 144, 14, 0.1);
 /* Team Section */
 .team-section{
     display: flex;
+    gap: 30px;
     max-width: 1440px;
     margin: 0 auto;
+    margin-top : 100px;
+    margin-bottom : 100px;
     /* background-color: #72727267; */
 
 }
@@ -161,4 +164,21 @@ background-color: rgba(255, 144, 14, 0.1);
     font-size: 1rem;
     
 }
+
+.team-section{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5px;
+}
+
+.team-left{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 5px;
+ 
+}
+.team-left img{
+    width: 100%;
+}
+
 }
