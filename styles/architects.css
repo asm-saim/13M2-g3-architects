@@ -11,28 +11,154 @@
     "wdth" 100;
 }
 
+.bg-color-light{
+background-color: rgba(255, 144, 14, 0.1);
+}
+
 /* navbar */
 .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+.navbar .brand{
+    width: 700;
+    font-size: 1.8rem;
+}
 .nav-links{
     display: flex;
-    list-style: none;    
+    list-style: none;  
+    font-size: 1.2rem;
+    width: 500; 
+    
 }
 
 .nav-item {
     margin-right: 20px;
+    
 }
 
 .nav-item a{
     text-decoration: none;
+    color: #727272; 
 }
 
 /* nav-banner */
 .nav-banner{
     width: 1440px;
     margin: 0 auto;
-    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* banner content */
+
+.banner-content{
+    width: 862px;
+    margin: 0 auto;
+   text-align: center;
+
+}
+.banner .banner-head{
+    width: 700;
+    font-size: 4rem;
+    color: #131313;
+}
+.banner-content .banner-p{
+    width:400;
+    font-size: 1.2rem;
+    color: #727272;
+}
+.banner .btn, .team-btn {
+    width: 180px;
+    height: 64px;
+    background-color: #FF900E;
+    width: 600;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    margin:30px 0px;
+    border: none;
+}
+.banner .btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.banner-img{
+    width: 100%;
+    /* background-color: #FF900E; */
+    padding-bottom: 5%;
+    /* height: 700px; */
+}
+
+/* Team Section */
+.team-section{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* background-color: #72727267; */
+
+}
+.team-left{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+}
+.team-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.team-right h1{
+    font-size: 3.1rem;
+    width: 600;
+} 
+.team-right p{
+    font-size: 1.1rem;
+    width: 400;
+    color: #727272;
+}
+
+.h-features{
+    color: #FF900E;
+}
+.h-quick_list{
+    color: #727272;
+}
+.h-of-our{
+    color: #131313;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width:576px) {
+   .navbar{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+} 
+.nav-banner{
+    width: auto;
+    margin: 0 auto;
+}
+.banner .banner-head{
+    width: 700;
+    font-size: 2rem;
+    color: #131313;
+}
+
+.banner-content{
+    width: 100%;
+    margin: 0 auto;
+   text-align: center;
+
+}
+.banner-content .banner-p{
+    width:400;
+    font-size: 1rem;
+    
+}
 }
